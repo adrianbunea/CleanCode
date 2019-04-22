@@ -1,19 +1,26 @@
 package MeaningfulNames;
 import java.util.*;
 
+class Cell {
+    static final int FLAGGED = 4;
+    int statusValue;
+
+    public boolean isFlagged() {
+        return statusValue == FLAGGED;
+    }
+}
+
 public class IntentionRevealingNames {
     int elapsedTimeInDays;
     int daysSinceCreation;
     int daysSinceModification;
     int fileAgeInDays;
 
-    public static final int STATUS_VALUE = 0;
-    public static final int FLAGGED = 4;
-    List<int[]> gameBoard;
-    public List<int[]> getFlaggedCells() {
-        List<int[]> flaggedCells = new ArrayList<int[]>();
-        for (int[] cell : gameBoard)
-            if (cell[STATUS_VALUE] == FLAGGED)
+    List<Cell> gameBoard;
+    public List<Cell> getFlaggedCells() {
+        List<Cell> flaggedCells = new ArrayList<Cell>();
+        for (Cell cell : gameBoard)
+            if (cell.isFlagged())
                 flaggedCells.add(cell);
         return flaggedCells;
     }
