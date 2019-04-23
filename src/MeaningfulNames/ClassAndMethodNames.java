@@ -2,7 +2,7 @@ package MeaningfulNames;
 import java.lang.*;
 
 public class ClassAndMethodNames {
-    private class Employee {
+    class Employee {
         String name;
 
         public String getName() {
@@ -10,7 +10,7 @@ public class ClassAndMethodNames {
         }
     }
 
-    private class Customer {
+    class Customer {
         String name;
 
         public void setName(String name) {
@@ -18,7 +18,7 @@ public class ClassAndMethodNames {
         }
     }
 
-    private class Paycheck {
+    class Paycheck {
         boolean posted;
 
         public boolean isPosted() {
@@ -26,7 +26,7 @@ public class ClassAndMethodNames {
         }
     }
 
-    private void exampleFunction() {
+    void exampleFunction() {
         Employee employee = new Employee();
         String name = employee.getName();
 
