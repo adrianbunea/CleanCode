@@ -4,7 +4,7 @@ public class PickOneWordPerConcept {
     class Person {
         String name;
 
-        String fetchName() {
+        String getName() {
             return name;
         }
     }
@@ -12,7 +12,7 @@ public class PickOneWordPerConcept {
     class Book {
         String text;
 
-        String retrieveText() {
+        String getText() {
             return text;
         }
     }
