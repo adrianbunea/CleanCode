@@ -87,18 +87,20 @@ public class SwitchStatements {
     }
 
     class EmployeeRecord {
-        int type;
+        Type type;
     }
 
     class InvalidEmployeeType extends Exception {
-        public InvalidEmployeeType(int type) {
+        public InvalidEmployeeType(Type type) {
             System.out.println(type);
         }
     }
 
     class Money {}
 
-    static final int COMMISSIONED = 0;
-    static final int HOURLY = 1;
-    static final int SALARIED = 2;
+    enum Type {
+        COMMISSIONED,
+        HOURLY,
+        SALARIED
+    }
 }
