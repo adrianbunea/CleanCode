@@ -1,15 +1,9 @@
 package MeaningfulNames;
 
 public class DontBeCute {
-    void holyHandGrenade() {
-        /* Deletes items */
-    }
+    void DeleteItems() { /* */ }
 
-    void whack() {
-        /* Kills a process or something */
-    }
+    void Kill() { /* */ }
 
-    void eatMyShorts() {
-        /* Abort */
-    }
+    void Abort() { /* */ }
 }
