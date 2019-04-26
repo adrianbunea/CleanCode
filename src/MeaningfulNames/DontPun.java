@@ -10,7 +10,7 @@ public class DontPun {
         names.add(name);
     }
 
-    String addNames() {
+    String concatenateNames() {
         return firstName + ' ' + lastName;
     }
 }
