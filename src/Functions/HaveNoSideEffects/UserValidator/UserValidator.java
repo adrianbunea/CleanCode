@@ -11,7 +11,6 @@ public class UserValidator {
             String codedPhrase = user.getPhraseEncodedByPassword();
             String phrase = cryptographer.decrypt(codedPhrase, password);
             if ("Valid Password".equals(phrase)) {
-                Session.Initialize();
                 return true;
             }
         }
