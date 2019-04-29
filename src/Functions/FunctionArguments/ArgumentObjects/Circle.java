@@ -1,11 +1,11 @@
 package Functions.FunctionArguments.ArgumentObjects;
 
 public class Circle {
-    double x, y, radius;
+    Point center;
+    double radius;
 
-    public Circle(double x, double y, double radius) {
-        this.x = x;
-        this.y = y;
+    public Circle(Point center, double radius) {
+        this.center = center;
         this.radius = radius;
     }
 }
