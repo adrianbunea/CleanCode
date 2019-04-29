@@ -1,8 +1,8 @@
 package Functions.FunctionArguments;
 
 public class VerbsAndKeywords {
-    void write(String name) {}
-    boolean assertEqual(int expected, int actual) {
+    void writeField(String name) {}
+    boolean assertExpectedEqualsActual(int expected, int actual) {
         return expected == actual;
     }
 }
