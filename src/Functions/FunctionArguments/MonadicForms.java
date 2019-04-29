@@ -22,7 +22,8 @@ public class MonadicForms {
     }
 
     // Bad monadic form
-    void includeSetupInto(StringBuffer pageText){
-        /* Do something */
+    StringBuffer includeSetupInto(StringBuffer pageText){
+        /* Do something to the argument then return it */
+        return pageText;
     }
 }
