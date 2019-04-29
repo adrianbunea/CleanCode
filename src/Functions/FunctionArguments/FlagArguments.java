@@ -1,13 +1,11 @@
 package Functions.FunctionArguments;
 
 public class FlagArguments {
-    void render(boolean isSuite) {
-        if (isSuite) {
-            // Do something
-        }
+    void renderForSuite() {
+        // Do something
+    }
 
-        else {
-            // Do something else
-        }
+    void renderForSingleTest() {
+        // Do something else
     }
 }
