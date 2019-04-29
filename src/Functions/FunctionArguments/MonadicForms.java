@@ -20,4 +20,9 @@ public class MonadicForms {
     void passwordFailedNTimes(int attempts) {
         /* Do something */
     }
+
+    // Bad monadic form
+    void includeSetupInto(StringBuffer pageText){
+        /* Do something */
+    }
 }
