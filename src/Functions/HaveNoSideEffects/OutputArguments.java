@@ -1,7 +1,14 @@
 package Functions.HaveNoSideEffects;
 
 public class OutputArguments {
-    public void appendFooter(StringBuffer report) {
-        // Do something
+    class Report {
+        public void appendFooter() {
+            // Do something to this object
+        }
+    }
+
+    void testFunction() {
+        Report report = new Report();
+        report.appendFooter();
     }
 }
