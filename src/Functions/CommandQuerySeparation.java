@@ -1,15 +1,18 @@
 package Functions;
 
 public class CommandQuerySeparation {
-    public boolean set(String attribute, String value) {
-        // sets value of named attribute
-        // checks if the operation worked and returns a boolean
+    public boolean attributeExists(String attribute) {
+        // checks if the attribute exists
         return true;
     }
 
-    public void testFunctions() {
-        if (set("name", "Adrian")) {
-            // do something if it worked
+    public void setAttribute(String attribute, String value) {
+        // sets the value of the named attribute
+    }
+
+    public void testFunction() {
+        if (attributeExists("name")) {
+            setAttribute("name", "Adrian");
         }
     }
 }
