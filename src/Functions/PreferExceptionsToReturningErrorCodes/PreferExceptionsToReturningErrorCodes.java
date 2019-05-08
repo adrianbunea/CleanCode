@@ -11,18 +11,31 @@ public class PreferExceptionsToReturningErrorCodes {
     ConfigKeys configKeys = new ConfigKeys();
     Page page = new Page();
 
-    public void deletePage(Page page) {
-        // Do something
-    }
 
     public void testFunction() {
+        delete(page);
+    }
+
+    private void delete(Page page) {
         try {
-            deletePage(page);
-            registry.deleteReference(page.name);
-            configKeys.deleteKey(page.name.makeKey());
+            deletePageAndReferences(page);
         }
         catch (Exception e) {
-            logger.log(e.getMessage());
+            logError(e);
         }
+    }
+
+    private void deletePageAndReferences(Page page) throws Exception {
+        deletePage(page);
+        registry.deleteReference(page.name);
+        configKeys.deleteKey(page.name.makeKey());
+    }
+
+    private void logError(Exception e) {
+        logger.log(e.getMessage());
+    }
+
+    private void deletePage(Page page) {
+        // Do something
     }
 }
