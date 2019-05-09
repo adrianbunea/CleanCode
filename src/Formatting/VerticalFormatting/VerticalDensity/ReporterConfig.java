@@ -1,5 +1,5 @@
 package Formatting.VerticalFormatting.VerticalDensity;
-import Formatting.HelperClasses.Property;
+import Formatting.VerticalFormatting.VerticalDensity.HelperClasses.Property;
 
 import java.util.*;
 

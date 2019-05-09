@@ -1,6 +1,6 @@
 package Formatting.VerticalFormatting.OpennessBetweenConcepts;
-import Formatting.HelperClasses.ParentWidget;
-import Formatting.HelperClasses.Widgets;
+import Formatting.VerticalFormatting.OpennessBetweenConcepts.HelperClasses.ParentWidget;
+import Formatting.VerticalFormatting.OpennessBetweenConcepts.HelperClasses.Widgets;
 
 import java.util.regex.*;
 public class BoldWidget extends ParentWidget {
