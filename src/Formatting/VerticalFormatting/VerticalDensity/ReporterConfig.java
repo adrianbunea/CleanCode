@@ -4,15 +4,7 @@ import Formatting.HelperClasses.Property;
 import java.util.*;
 
 public class ReporterConfig {
-
-    /**
-     * The class name of the reporter listener
-     */
     private String m_className;
-
-    /**
-     * The properties of the report listener
-     */
     private List<Property> m_properties = new ArrayList<Property>();
 
     public void addProperty(Property property) {
