@@ -1,4 +1,5 @@
 package ObjectsAndDataStructures.DataObjectAntiSymmetry.HelperClasses;
 
-public class NoSuchShapeException extends Exception {
+public interface Shape {
+    double area();
 }
